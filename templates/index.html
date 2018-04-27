@@ -1,0 +1,56 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .actions{color: White;
+                font-size:x-large;}
+    </style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static "assets/css/main.css"%}" />
+    <title>AQUAPONICS</title>
+</head>
+<body>
+<!-- Header -->
+			<header id="header" class="alt">
+
+				<nav id="nav">
+					<ul>
+                        <li>Temperature= {{ data.temp }}</li>
+                        <li>Plant_Temp= {{ data.plant_temp }}</li>
+                        <li>Humidity= {{ data.humidity}}</li>
+                        <li>PH= {{ data.ph}}</li>
+                    </ul>
+				</nav>
+			</header>
+
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Aquaponics</h2>
+				<p>Sensor Data!</p>
+				<ul class="actions">
+					<ul>
+                        <li>Temperature= {{ data.temp }}</li>
+                        <li>Plant_Temp= {{ data.plant_temp }}</li>
+                        <li>Humidity= {{ data.humidity}}</li>
+                        <li>PH= {{ data.ph}}</li>
+                    </ul>
+				</ul>
+			</section>
+
+
+<!-- Scripts -->
+			<script src="{% static "assets/js/jquery.min.js"%}"></script>
+			<script src="{% static "assets/js/skel.min.js"%}"></script>
+			<script src="{% static "assets/js/util.js"%}"></script>
+			<script src="{% static "assets/js/main.js"%}"></script>
+
+
+
+
+</body>
+</html>
