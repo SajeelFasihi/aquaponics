@@ -10,7 +10,7 @@ framework==0.1.0
 future==0.16.0
 gpiozero==1.4.1
 gunicorn==19.7.1
-httpie==0.9.9
+httpie==3.1.0
 idna==2.6
 Markdown==2.6.11
 patterns==0.3
